@@ -206,6 +206,10 @@ Ejecute un cliente MySQL para conectarse al servidor:
 
 Este comando crea un nuevo Pod en el clúster que ejecuta un cliente MySQL y lo conecta al servidor a través del Servicio. Si se conecta, sabrá que su base de datos MySQL con estado está en funcionamiento.
 
+O podemos exponer el puerto para conectarnos con otro cliente:
+
+>> kubectl -n default port-forward deployment/mysql 3306
+
 ![image info](./images/imagen_20.png)
 
 ## ELIMINAR LA IMPLEMENTACION
